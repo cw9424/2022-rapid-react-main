@@ -28,9 +28,9 @@ public class LiftSubsystem extends SubsystemBase {
   public void lift(boolean on, boolean up) {
     if (on) {
       if (up) {
-        mLift.set(-0.05);
+        mLift.set(-0.5);
       } else {
-        mLift.set(0.05);
+        mLift.set(0.5);
       }
     } else {
       mLift.set(0);

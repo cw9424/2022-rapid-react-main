@@ -25,10 +25,10 @@ public class IntakeSubsystem extends SubsystemBase {
     if (on) {
      //What to do when the intake in ON?
       if(up){
-        mMotor.set(0.5);
+        mMotor.set(1);
       }
         else{
-        mMotor.set(-0.5);
+        mMotor.set(-1);
         }
     }
       else {

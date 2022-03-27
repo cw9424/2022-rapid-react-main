@@ -30,8 +30,8 @@ public final class Constants {
     public static final class JOYSTICK_BUTTON {
         
         //assign joystick buttons
-        public static final int INTAKE_BUTTON = 2;
-        public static final int INVERSED_INTAKE_BUTTON = 1;
+        public static final int INTAKE_BUTTON = 1;
+        public static final int INVERSED_INTAKE_BUTTON = 2;
         public static final int LIFT_BUTTON = 5;
         public static final int INVERSED_LIFT_BUTTON = 6;
     }

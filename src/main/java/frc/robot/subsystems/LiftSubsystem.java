@@ -5,10 +5,12 @@
 package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import frc.robot.Constants;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------
+//import frc.robot.Constants;
 
-import com.revrobotics.CANSparkMax;
-import com.revrobotics.CANSparkMaxLowLevel.MotorType;
+import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
+//import com.revrobotics.CANSparkMax;
+//import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
 //import edu.wpi.first.wpilibj.DoubleSolenoid;
 //import edu.wpi.first.wpilibj.PneumaticsModuleType;
@@ -21,7 +23,8 @@ public class LiftSubsystem extends SubsystemBase {
   
   public LiftSubsystem() {
 
-    mLift = new CANSparkMax(Constants.SPARK_MAX_CAN.LIFT_CAN_ID, MotorType.kBrushless);
+    mLift = new WPI_VictorSPX(6);
+    //mLift = new CANSparkMax(Constants.SPARK_MAX_CAN.LIFT_CAN_ID, MotorType.kBrushed);
 
   }
 

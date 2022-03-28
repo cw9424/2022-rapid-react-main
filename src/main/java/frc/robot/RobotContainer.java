@@ -15,6 +15,8 @@ import frc.robot.subsystems.LiftSubsystem;
 import frc.robot.commands.IntakeCommand;
 import frc.robot.commands.LiftCommand;
 
+import frc.robot.commands.drive.AutoDriveCommand;
+
 
 public class RobotContainer {
   
@@ -60,8 +62,8 @@ public class RobotContainer {
    * @return the command to run in autonomous
    */
   public Command getAutonomousCommand() {
-    //return new AutoDriveCommand(driveSubsystem, -0.3, 0);
-    return null;
+    return new AutoDriveCommand(driveSubsystem, -0.3, 0);
+    //return null;
   }
 }
 
